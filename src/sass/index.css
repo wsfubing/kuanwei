@@ -42,14 +42,19 @@ img {
   visibility: hidden;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 header {
   width: 100%;
-  height: 130px;
   margin: 0;
   padding: 0;
   z-index: 999;
   top: 0;
   background: black;
+  position: fixed;
 }
 
 header .inner {
@@ -129,7 +134,6 @@ header .inner .logo-rgt .help .pic {
 }
 
 header nav {
-  height: 50px;
   width: 100%;
   background: #464646;
   text-align: center;
@@ -171,6 +175,7 @@ header nav ul .one span {
   width: 100%;
   position: absolute;
   background-color: #fff;
+  z-index: 100;
 }
 
 .man .man-top,
@@ -205,10 +210,88 @@ header nav ul .one span {
   background: #b7b7b7;
 }
 
-.banner {
+.mask_layer {
+  position: absolute;
   width: 100%;
-  height: 56px;
-  background: chartreuse;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+
+.man ul li:hover span {
+  text-decoration: underline;
+  color: #aaa;
+}
+
+.banner {
+  color: #333;
+  font-size: 100%;
+  vertical-align: baseline;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.banner a {
+  color: #222;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.banner .nav-notice {
+  padding: 15px 0;
+}
+
+.banner .nav-notice .swiper-duration {
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 28px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.swiper-wrapper .swiper-slide {
+  flex-shrink: 0;
+  height: 100%;
+  position: absolute;
+  color: #df0300;
+  font-size: 15px;
+  text-align: center;
+  line-height: 33px;
+  width: 100%;
+}
+
+.swiper-wrapper .swiper-slide a {
+  display: block;
+  max-width: 1200px;
+  text-align: center;
+  outline: medium none;
+  overflow: hidden;
+  color: #222;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper .move_two {
+  left: 100%;
+}
+
+.swiper-wrapper .move_three {
+  left: 200%;
 }
 
 .slide {
@@ -597,8 +680,26 @@ footer .inner .logo {
   width: 133px;
   height: 100px;
   position: absolute;
-  background: url(https://image.converse.com.cn/images/commons/header-footer-new2.png) 0 0 no-repeat transparent;
+  background: url(../img/header-footer-new2.png) 0 0 no-repeat;
   left: 50%;
   top: 22%;
   margin: -10px 0 0 -66px;
+  transform: scale(0.5);
+}
+
+footer .inner .footer-bottom {
+  display: block;
+  margin: 12px auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 40px;
+}
+
+footer .inner .tip-for-fraud img {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  cursor: pointer;
 }
