@@ -42,7 +42,8 @@ img {
   visibility: hidden;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -77,7 +78,7 @@ header .inner .logo-pic {
 
 header .inner .logo-rgt {
   float: right;
-  margin: 30px 0 0 0;
+  margin: 22px 0 0 0;
 }
 
 header .inner .logo-rgt ul li {
@@ -213,7 +214,7 @@ header nav ul .one span {
 .mask_layer {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 10000%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 99;
   display: none;
@@ -224,73 +225,33 @@ header nav ul .one span {
   color: #aaa;
 }
 
-.banner {
-  color: #333;
-  font-size: 100%;
-  vertical-align: baseline;
-  height: auto;
-  position: relative;
+.banner .inner {
+  width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  position: relative;
+  height: 33px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.banner .inner .swiper-slide {
+  position: absolute;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .banner a {
-  color: #222;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.banner .nav-notice {
-  padding: 15px 0;
-}
-
-.banner .nav-notice .swiper-duration {
-  border: 0;
-  position: relative;
-  overflow: hidden;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  height: 28px;
-}
-
-.swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  box-sizing: content-box;
-}
-
-.swiper-wrapper .swiper-slide {
-  flex-shrink: 0;
-  height: 100%;
-  position: absolute;
-  color: #df0300;
-  font-size: 15px;
-  text-align: center;
-  line-height: 33px;
-  width: 100%;
-}
-
-.swiper-wrapper .swiper-slide a {
   display: block;
-  max-width: 1200px;
+  color: #333;
   text-align: center;
-  outline: medium none;
-  overflow: hidden;
-  color: #222;
-  font-size: 12px;
-  line-height: 14px;
   margin: 0 auto;
 }
 
-.swiper-wrapper .move_two {
+.move_two {
   left: 100%;
 }
 
-.swiper-wrapper .move_three {
+.move_three {
   left: 200%;
 }
 
@@ -301,12 +262,23 @@ header nav ul .one span {
   overflow: hidden;
 }
 
+.slide .pic {
+  position: relative;
+  height: 676px;
+}
+
+.slide .pic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .slide .pic .hid {
-  display: none;
+  opacity: 0;
 }
 
 .slide .pic .show {
-  display: block;
+  opacity: 1;
 }
 
 .slide .rig {
@@ -388,6 +360,95 @@ header nav ul .one span {
 .slide .meau ul .show {
   border-top: 1px solid black;
   color: black;
+}
+
+.selling-item .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.selling-item .inner .title {
+  width: 100%;
+  height: 30px;
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+}
+
+.selling-item .inner .title h1 {
+  background: none repeat scroll 0 0 #fff;
+  display: inline-block;
+  zoom: 1;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0 4%;
+  position: relative;
+  font-size: 30px;
+}
+
+.selling-item .inner .title::before {
+  background-color: #b7b7b7;
+  content: "";
+  height: 1px;
+  left: 1.5%;
+  position: absolute;
+  top: 17px;
+  width: 97%;
+}
+
+.selling-item .inner .pic ul {
+  overflow: hidden;
+}
+
+.selling-item .inner .pic ul li {
+  width: 25%;
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.selling-item .inner .pic ul li span {
+  display: block;
+  color: #333;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.selling-item .inner .pic ul li:hover span {
+  text-decoration: underline;
+}
+
+.selling-item .inner .line {
+  margin-top: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.selling-item .inner .line .line-con {
+  width: 39px;
+  height: 21px;
+  position: absolute;
+  background: url(https://image.converse.com.cn/images/homepage/active.png) no-repeat scroll 0 0 transparent;
+  top: 0;
+  left: 10%;
+}
+
+.selling-item .inner .line::before {
+  width: 97%;
+  background-color: #b7b7b7;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 1.5%;
+  content: "";
+}
+
+.selling-item .inner .pic_cont .list-slice {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .street {
