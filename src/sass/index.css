@@ -445,10 +445,99 @@ header nav ul .one span {
   content: "";
 }
 
-.selling-item .inner .pic_cont .list-slice {
-  width: 100%;
-  height: auto;
+.pic_cont {
   position: relative;
+  padding-top: 50px;
+  height: 540px;
+}
+
+.pic_cont .list-slice-all {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.pic_cont .l-s-p {
+  position: absolute;
+  width: 1000px;
+  top: 50px;
+  z-index: 5;
+}
+
+.pic_cont .list-slice-top {
+  border-bottom: 1px dashed #ccc;
+}
+
+.pic_cont dl {
+  float: left;
+  width: 25%;
+}
+
+.pic_cont dl dd {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pic_cont dl a {
+  color: black;
+}
+
+.pic_cont dl a img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
+.pic_cont .show {
+  opacity: 1;
+  display: block;
+}
+
+.pic_cont .hid {
+  opacity: 0;
+  display: none;
+}
+
+.pic_cont .examine {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pic_cont .examine a {
+  line-height: 48px;
+  font-size: 16px;
+  height: 48px;
+  padding: 0 25px;
+  border: 1px solid #000;
+  text-align: center;
+  display: inline-block;
+  width: 42%;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.pic_cont .examine a::after {
+  background: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png) no-repeat -9px -163px;
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  content: "";
+  transition: all 0.3s;
+}
+
+.pic_cont .examine a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.pic_cont .examine a:hover::after {
+  background: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png) no-repeat -44px -163px;
 }
 
 .street {
