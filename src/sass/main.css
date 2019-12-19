@@ -1,230 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-p,
-strong,
-b,
-i,
-em {
-  font-style: normal;
-  font-weight: normal;
-}
-
-img {
-  vertical-align: top;
-}
-
-.clear:after {
-  content: "";
-  display: block;
-  overflow: hidden;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  z-index: 999;
-  top: 0;
-  background: black;
-  position: fixed;
-}
-
-header .inner {
-  width: 90%;
-  height: 80px;
-  margin: 0 auto;
-}
-
-header .inner .logo-lft {
-  float: left;
-}
-
-header .inner .logo-pic {
-  width: 163px;
-  height: 21.59px;
-  background: url(https://image.converse.com.cn/images/commons/header-footer-new3.png) 0 0 no-repeat transparent;
-  position: absolute;
-  top: 30px;
-}
-
-header .inner .logo-rgt {
-  float: right;
-  margin: 22px 0 0 0;
-}
-
-header .inner .logo-rgt ul li {
-  float: left;
-  color: white;
-}
-
-header .inner .logo-rgt ul li a {
-  font-size: 10px;
-}
-
-header .inner .logo-rgt .registry a {
-  vertical-align: middle;
-}
-
-header .inner .logo-rgt .registry .pic {
-  display: inline-block;
-  background: url(../img/sprites_header_footer.png) no-repeat -96px -85px;
-  color: white;
-  height: 31px;
-  width: 30px;
-  vertical-align: middle;
-}
-
-header .inner .logo-rgt .shooping a {
-  vertical-align: middle;
-}
-
-header .inner .logo-rgt .shooping .pic {
-  background: url(../img/sprites_header_footer.png) no-repeat -168px -97px;
-  color: white;
-  text-align: center;
-  line-height: 31px;
-}
-
-header .inner .logo-rgt .message .pic {
-  background: url(../img/sprites_header_footer.png) no-repeat -95px -54px;
-}
-
-header .inner .logo-rgt .search .pic {
-  background: url(../img/sprites_header_footer.png) no-repeat -137px -161px;
-}
-
-header .inner .logo-rgt .help .pic {
-  background: url(../img/sprites_header_footer.png) no-repeat -169px -161px;
-}
-
-.logo-rgt .pic {
-  display: inline-block;
-  height: 31px;
-  width: 30px;
-  vertical-align: middle;
-  margin: 0 20px;
-}
-
-header nav {
-  width: 100%;
-  background: #464646;
-  text-align: center;
-}
-
-header nav ul .one {
-  display: inline-block;
-  height: 50px;
-  min-width: 110px;
-  padding: 0 12px;
-  cursor: pointer;
-  position: relative;
-}
-
-header nav ul .one a {
-  display: inline-block;
-  height: 100%;
-  min-width: 110px;
-  font-size: 18px;
-  height: inherit;
-  line-height: inherit;
-  padding: 5px 0.625em;
-  box-sizing: border-box;
-}
-
-header nav ul .one span {
-  border-color: white transparent transparent;
-  border-right: 6px solid transparent;
-  border-style: solid;
-  border-width: 6px;
-  position: absolute;
-  left: 46%;
-  bottom: 6px;
-}
-
-.man {
-  display: none;
-  height: 262px;
-  width: 100%;
-  position: absolute;
-  background-color: #fff;
-  z-index: 100;
-}
-
-.man .man-top,
-.man .man-bot {
-  max-width: 1000px;
-  height: 130px;
-  margin: 0 auto;
-}
-
-.man .man-top li,
-.man .man-bot li {
-  display: inline-block;
-  position: relative;
-}
-
-.man .man-top li span,
-.man .man-bot li span {
-  color: black;
-  display: block;
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  text-align: center;
-  line-height: 15px;
-  left: 0;
-  font-size: 14px;
-}
-
-.man .line {
-  height: 1px;
-  width: 100%;
-  background: #b7b7b7;
-}
-
-.mask_layer {
-  position: absolute;
-  width: 100%;
-  height: 10000%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99;
-  display: none;
-}
-
-.man ul li:hover span {
-  text-decoration: underline;
-  color: #aaa;
-}
-
 .banner .inner {
   width: 1200px;
   margin: 0 auto;
@@ -456,6 +229,27 @@ header nav ul .one span {
   padding-bottom: 30px;
 }
 
+.pic_cont .list-slice-all dl {
+  float: left;
+  width: 25%;
+}
+
+.pic_cont .list-slice-all dl dd {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pic_cont .list-slice-all dl a {
+  color: black;
+}
+
+.pic_cont .list-slice-all dl a img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
 .pic_cont .l-s-p {
   position: absolute;
   width: 1000px;
@@ -465,27 +259,6 @@ header nav ul .one span {
 
 .pic_cont .list-slice-top {
   border-bottom: 1px dashed #ccc;
-}
-
-.pic_cont dl {
-  float: left;
-  width: 25%;
-}
-
-.pic_cont dl dd {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.pic_cont dl a {
-  color: black;
-}
-
-.pic_cont dl a img {
-  width: 160px;
-  height: 160px;
-  display: block;
-  margin: 0 auto;
 }
 
 .pic_cont .show {
@@ -745,111 +518,4 @@ header nav ul .one span {
   text-indent: -9999px;
   margin: 0 15px;
   padding: 0;
-}
-
-.sitemap {
-  max-width: 1000px;
-  margin: 75px auto 0;
-  text-align: center;
-}
-
-.sitemap .line {
-  height: 30px;
-  margin: 20px auto;
-  max-width: 1000px;
-  position: relative;
-  text-align: center;
-}
-
-.sitemap .line::after {
-  background-color: #b7b7b7;
-  content: "";
-  height: 1px;
-  left: 1.5%;
-  position: absolute;
-  top: 16px;
-  width: 97%;
-}
-
-.sitemap dl {
-  width: 24%;
-  text-align: center;
-  display: inline-block;
-  zoom: 1;
-  vertical-align: top;
-  min-height: 280px;
-}
-
-.sitemap dl dt {
-  margin-bottom: 20px;
-}
-
-.sitemap dl dt a {
-  font-weight: bold;
-}
-
-.sitemap dl .strong a {
-  font-weight: bold;
-}
-
-.sitemap dl a {
-  color: #333;
-  font-size: 14px;
-}
-
-.sitemap dl .margin {
-  margin-bottom: 20px;
-}
-
-footer {
-  width: 100%;
-  position: relative;
-  background-color: #000;
-  color: #fff;
-}
-
-footer .inner {
-  margin: 0 auto;
-  max-width: 1000px;
-  height: 180px;
-  position: relative;
-  text-align: center;
-}
-
-footer .inner ul {
-  line-height: 30px;
-  padding: 18px 0 86px 0;
-}
-
-footer .inner ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-footer .inner .logo {
-  width: 133px;
-  height: 100px;
-  position: absolute;
-  background: url(../img/header-footer-new2.png) 0 0 no-repeat;
-  left: 50%;
-  top: 22%;
-  margin: -10px 0 0 -66px;
-  transform: scale(0.5);
-}
-
-footer .inner .footer-bottom {
-  display: block;
-  margin: 12px auto;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  left: 0;
-  bottom: 40px;
-}
-
-footer .inner .tip-for-fraud img {
-  display: block;
-  width: 60px;
-  margin: 0 auto;
-  cursor: pointer;
 }

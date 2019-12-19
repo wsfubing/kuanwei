@@ -1,5 +1,5 @@
 import { Tool } from './tool.js';
-var tool = new Tool();
+let tool = new Tool();
 
 class Navigation {
     constructor() {
@@ -136,17 +136,51 @@ class Hot {
             this.oLi[i].onmouseover = function () {
                 for (let j = 0; j < _this.oDiv.length; j++) {
                     _this.oDiv[j].className = 'hid';
-                    _this.oDiv[j].style.display='none'
+                    _this.oDiv[j].style.display = 'none'
                     tool.bufferMove(_this.oDiv[j], { opacity: 0 });
                 }
                 _this.oDiv[i].style.display = 'block';
                 tool.bufferMove(_this.oDiv[i], { opacity: 100 });
                 _this.oLine.style.left = _this.arr[i];
-                tool.bufferMove(_this.oLine,{left:_this.arr[i]})
+                tool.bufferMove(_this.oLine, { left: _this.arr[i] })
             }
         }
 
     }
 }
 new Hot().init();
-export { Slide, Navigation }
+
+// 渲染
+class Render {
+    constructor() {
+        this.oDiv = tool.$('.list-slice-man .list-slice-top')
+    }
+    init() {
+        let _this = this;
+        tool.ajxa({
+            url: 'http://localhost/kuanwei/php/shouye.php',
+            dataType: 'json'
+        }).then(function (data) {
+            console.log(data);
+            //遍历render
+            let strhtml = '';
+            for (let value of data) {
+                strhtml += `
+                <dl>
+                <dt>
+                    <a href="">
+                        <img src="${value.url}">
+                    </a>
+                </dt>
+                <dd><a href="">${value.title}</a></dd>
+                <dd>$+${value.price}</dd>
+                </dl>
+                `;
+            }
+            strhtml += '';
+            _this.oDiv.innerHTML = strhtml;
+        });
+    }
+}
+new Render().init();
+export { Slide, Navigation,Hot,Render }                          

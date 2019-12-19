@@ -1,0 +1,95 @@
+.sitemap {
+    max-width: 1000px;
+    margin: 75px auto 0;
+    text-align: center;
+    background-color: white;
+    .line {
+      height: 30px;
+      margin: 20px auto;
+      max-width: 1000px;
+      position: relative;
+      text-align: center;
+    }
+    .line::after {
+      background-color: #b7b7b7;
+      content: "";
+      height: 1px;
+      left: 1.5%;
+      position: absolute;
+      top: 16px;
+      width: 97%;
+    }
+    dl {
+      width: 24%;
+      text-align: center;
+      display: inline-block;
+      zoom: 1;
+      vertical-align: top;
+      min-height: 280px;
+      dt {
+        margin-bottom: 20px;
+        a {
+          font-weight: bold;
+        }
+      }
+      .strong a {
+        font-weight: bold;
+      }
+      a {
+        color: #333;
+        font-size: 14px;
+      }
+      .margin {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  //footer
+  footer {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+  
+    .inner {
+      margin: 0 auto;
+      max-width: 1000px;
+      height: 180px;
+      position: relative;
+      text-align: center;
+      ul {
+        line-height: 30px;
+        padding: 18px 0 86px 0;
+        li {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+      .logo {
+        width: 133px;
+        height: 100px;
+        position: absolute;
+        background: url(../img/header-footer-new2.png) 0 0 no-repeat;
+        left: 50%;
+        top: 22%;
+        margin: -10px 0 0 -66px;
+        transform: scale(0.5);
+      }
+      .footer-bottom {
+        display: block;
+        margin: 12px auto;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        bottom: 40px;
+      }
+      .tip-for-fraud img {
+        display: block;
+        width: 60px;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+    }
+  }
+  

@@ -1,0 +1,40 @@
+main {
+  margin-top: 130px;
+  .inner {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    a {
+      color: black;
+    }
+  }
+}
+.pic-warp {
+  float: left;
+  position: relative;
+  .tab {
+    float: left;
+    width: 200px;
+    .share {
+      height: 30px;
+      width: auto;
+      line-height: 30px;
+      font-size: 14px;
+      color: #333;
+      position: relative;
+      i{
+        background: url(https://image.converse.com.cn/images/detail/detail.png) no-repeat ;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+      }
+    }
+  }
+  .pic {
+    float: right;
+  }
+}
+.by-warp {
+  float: left;
+}

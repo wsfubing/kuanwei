@@ -1,0 +1,158 @@
+// header css
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    top: 0;
+    background: black;
+    position: fixed;
+    .inner {
+      width: 90%;
+      height: 80px;
+      margin: 0 auto;
+      .logo-lft {
+        float: left;
+      }
+      // logo
+      .logo-pic {
+        width: 163px;
+        height: 21.59px;
+        background: url(https://image.converse.com.cn/images/commons/header-footer-new3.png) 0 0 no-repeat transparent;
+        position: absolute;
+        top: 30px;
+      }
+      // 登陆注册
+      .logo-rgt {
+        float: right;
+        margin: 22px 0 0 0;
+        ul li {
+          float: left;
+          color: white;
+          a {
+            font-size: 10px;
+          }
+        }
+        .registry a {
+          vertical-align: middle;
+        }
+        .registry .pic {
+          display: inline-block;
+          background: url(../img/sprites_header_footer.png) no-repeat -96px -85px;
+          color: white;
+          height: 31px;
+          width: 30px;
+          vertical-align: middle;
+        }
+        .shooping a {
+          vertical-align: middle;
+        }
+        .shooping .pic {
+          background: url(../img/sprites_header_footer.png) no-repeat -168px -97px;
+          color: white;
+          text-align: center;
+          line-height: 31px;
+        }
+        .message .pic {
+          background: url(../img/sprites_header_footer.png) no-repeat -95px -54px;
+        }
+        .search .pic {
+          background: url(../img/sprites_header_footer.png) no-repeat -137px -161px;
+        }
+        .help .pic {
+          background: url(../img/sprites_header_footer.png) no-repeat -169px -161px;
+        }
+      }
+    }
+  }
+  .logo-rgt .pic {
+    display: inline-block;
+    height: 31px;
+    width: 30px;
+    vertical-align: middle;
+    margin: 0 20px;
+  }
+  
+  // 导航
+  header nav {
+    width: 100%;
+    background: #464646;
+    text-align: center;
+    ul .one {
+      display: inline-block;
+      height: 50px;
+      min-width: 110px;
+      padding: 0 12px;
+      cursor: pointer;
+      position: relative;
+      a {
+        display: inline-block;
+        height: 100%;
+        min-width: 110px;
+        font-size: 18px;
+        height: inherit;
+        line-height: inherit;
+        padding: 5px 0.625em;
+        box-sizing: border-box;
+      }
+      span {
+        border-color: white transparent transparent;
+        border-right: 6px solid transparent;
+        border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        left: 46%;
+        bottom: 6px;
+      }
+    }
+  }
+  
+  //二级导航
+  //男的下面的二级导航
+  
+  .man {
+    display: none;
+    height: 262px;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    z-index: 100;
+    .man-top,
+    .man-bot {
+      max-width: 1000px;
+      height: 130px;
+      margin: 0 auto;
+      li {
+        display: inline-block;
+        position: relative;
+        span {
+          color: black;
+          display: block;
+          position: absolute;
+          bottom: 15px;
+          width: 100%;
+          text-align: center;
+          line-height: 15px;
+          left: 0;
+          font-size: 14px;
+        }
+      }
+    }
+    .line {
+      height: 1px;
+      width: 100%;
+      background: #b7b7b7;
+    }
+  }
+  .mask_layer {
+    position: absolute;
+    width: 100%;
+    height: 10000%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    display: none;
+  }
+  .man ul li:hover span {
+    text-decoration: underline;
+    color: #aaa;
+  }
