@@ -114,7 +114,7 @@ function Tool() {
         },
 
         // ajax
-        ajxa: function (obj) {
+        ajax: function (obj) {
 
             //将对象转换成数据拼接适合的字符串的格式?&
             function objToString(obj) {

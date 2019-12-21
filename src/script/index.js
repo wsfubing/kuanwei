@@ -157,7 +157,7 @@ class Render {
     }
     init() {
         let _this = this;
-        tool.ajxa({
+        tool.ajax({
             url: 'http://localhost/kuanwei/php/shouye.php',
             dataType: 'json'
         }).then(function (data) {
@@ -168,12 +168,12 @@ class Render {
                 strhtml += `
                 <dl>
                 <dt>
-                    <a href="">
+                    <a href="detail.html?sid=${value.sid}">
                         <img src="${value.url}">
                     </a>
                 </dt>
                 <dd><a href="">${value.title}</a></dd>
-                <dd>$+${value.price}</dd>
+                <dd>$${value.price}</dd>
                 </dl>
                 `;
             }
